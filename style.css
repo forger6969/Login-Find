@@ -136,6 +136,12 @@ body {
     background: rgba(255, 255, 255, 0.482);
     margin-top: 30px;
     display: none;
+    transition: 300ms all ease;
+}
+
+#findBtn:active{
+    transition: 300ms all ease;
+    transform: scale(0.99);
 }
 
 #find.active {
@@ -183,6 +189,7 @@ body {
     text-align: center;
     padding: 0 2%;
 }
+
 
 
 
