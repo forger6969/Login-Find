@@ -73,10 +73,3 @@ loginsBtn.addEventListener(`click`, () => {
     }
 
 })
-
-
-
-
-
-
-
