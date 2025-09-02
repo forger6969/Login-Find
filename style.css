@@ -107,7 +107,8 @@ body {
     font-size: 18px;
     text-align: center;
     padding: 0 10px;
-    
+    color: rgb(91, 83, 83);
+    text-decoration: underline;
 }
 
 #login {
@@ -289,6 +290,10 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+#exitBtn.active {
+    display: block;
 }
 
 @keyframes warAnim {

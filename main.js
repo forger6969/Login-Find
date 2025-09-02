@@ -12,7 +12,7 @@ const findWrapp = document.getElementById(`find-input`)
 const exitBtn = document.getElementById(`exitBtn`)
 const findBtn = document.getElementById(`findBtn`)
 
-const loginBox = document.querySelector(`.login-box`)
+const loginBox = document.getElementById(`login-box`)
 
 const warning = document.getElementById(`warning`)
 
@@ -109,7 +109,12 @@ findBtn.addEventListener(`click`, () => {
 
     if (findUser) {
 
-        loginBoxHTML.innerHTML = `<p>Имя: ${findUser.name} </p>`
+        loginBox.innerHTML = `<p>Имя: ${findUser.name} </p>`
+
+
+
+        exitBtn.classList.add(`active`)
+        exitBtn.classList.remove(`none`)
 
 
     }
