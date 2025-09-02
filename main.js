@@ -12,6 +12,8 @@ const findWrapp = document.getElementById(`find-input`)
 const exitBtn = document.getElementById(`exitBtn`)
 const findBtn = document.getElementById(`findBtn`)
 
+const loginBox = document.querySelector(`.login-box`)
+
 const warning = document.getElementById(`warning`)
 
 
@@ -93,5 +95,23 @@ exitBtn.addEventListener(`click`, () => {
 
     loginInput.value = ''
     passwordInput.value = ''
+
+})
+
+findBtn.addEventListener(`click`, () => {
+
+    const findInputValue = findInput.value.trim();
+
+    const findUser = usersOb[findInputValue]
+
+
+    console.log(findUser)
+
+    if (findUser) {
+
+        loginBoxHTML.innerHTML = `<p>Имя: ${findUser.name} </p>`
+
+
+    }
 
 })

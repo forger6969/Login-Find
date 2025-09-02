@@ -101,6 +101,15 @@ body {
     padding-top: 50px;
 }
 
+.login-box p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+    
+}
+
 #login {
     width: 70%;
     margin: 0 auto;
@@ -276,7 +285,7 @@ body {
     transform: scale(0.99);
 }
 
-.find-btn-box{
+.find-btn-box {
     display: flex;
     align-items: center;
     gap: 20px;
