@@ -6,7 +6,11 @@ let usersOb = {
 const loginInput = document.getElementById(`login`)
 const passwordInput = document.getElementById(`password`)
 const findInput = document.getElementById(`find`)
-const loginsBtn = document.getElementById(`findBtn`)
+const loginsBtn = document.getElementById(`loginBtn`)
+const loginWrapp = document.getElementById(`logins-input`)
+const findWrapp = document.getElementById(`find-input`)
+const exitBtn = document.getElementById(`exitBtn`)
+const findBtn = document.getElementById(`findBtn`)
 
 const warning = document.getElementById(`warning`)
 
@@ -33,7 +37,7 @@ loginsBtn.addEventListener(`click`, () => {
             passwordInput.classList.remove(`none`)
         }, 2000)
 
-    } else if (!userCheckLogin) { 
+    } else if (!userCheckLogin) {
         warning.textContent = `Пользователь  -- ${loginInputValue} --  не найден`
         warning.classList.add(`active`)
         loginInput.classList.add(`none`)
@@ -66,10 +70,28 @@ loginsBtn.addEventListener(`click`, () => {
 
     } else if (userCheckLogin && passwordInputValue === userCheckLogin.password) {
 
-        findInput.classList.add(`active`)
-        loginInput.classList.add(`disable`)
-        passwordInput.classList.add(`disable`)
+        loginWrapp.classList.remove(`active`)
+        loginWrapp.classList.add(`none`)
+
+
+        findWrapp.classList.remove(`none`)
+        findWrapp.classList.add(`active`)
 
     }
+
+})
+
+exitBtn.addEventListener(`click`, () => {
+
+    loginWrapp.classList.remove(`none`)
+    loginWrapp.classList.add(`active`)
+
+
+
+    findWrapp.classList.remove(`active`)
+    findWrapp.classList.add(`none`)
+
+    loginInput.value = ''
+    passwordInput.value = ''
 
 })
