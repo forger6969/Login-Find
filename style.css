@@ -247,6 +247,11 @@ body {
     display: none;
 }
 
+#find.none {
+    display: none;
+}
+
+
 #findBtn {
     width: 17vw;
     height: 45px;
@@ -258,6 +263,14 @@ body {
     font-weight: 600;
     font-size: 20px;
     transition: 300ms all ease;
+}
+
+#findBtn.none {
+    display: none;
+}
+
+#findBtn.active {
+    display: block;
 }
 
 #exitBtn {
@@ -293,6 +306,26 @@ body {
 }
 
 #exitBtn.active {
+    display: block;
+}
+
+#find-input p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+    color: rgb(91, 83, 83);
+    text-decoration: underline;
+    padding: 0 350px;
+    line-height: 50px;
+}
+
+.findP{
+    display: none;
+}
+
+.findP.active{
     display: block;
 }
 

@@ -11,6 +11,8 @@ const loginWrapp = document.getElementById(`logins-input`)
 const findWrapp = document.getElementById(`find-input`)
 const exitBtn = document.getElementById(`exitBtn`)
 const findBtn = document.getElementById(`findBtn`)
+const findList = document.getElementById(`findList`)
+const findListp = document.querySelector(`.findP`)
 
 const loginBox = document.getElementById(`login-box`)
 
@@ -93,8 +95,16 @@ exitBtn.addEventListener(`click`, () => {
     findWrapp.classList.remove(`active`)
     findWrapp.classList.add(`none`)
 
+    findBtn.classList.remove(`none`)
+    findBtn.classList.add(`active`)
+
+    findInput.classList.remove(`none`)
+
+    findListp.classList.remove(`active`)
+
     loginInput.value = ''
     passwordInput.value = ''
+    findInput.value = ''
 
 })
 
@@ -109,13 +119,17 @@ findBtn.addEventListener(`click`, () => {
 
     if (findUser) {
 
-        loginBox.innerHTML = `<p>Имя: ${findUser.name} </p>`
-
-
-
         exitBtn.classList.add(`active`)
         exitBtn.classList.remove(`none`)
 
+        findBtn.classList.remove(`active`)
+        findBtn.classList.add(`none`)
+
+        findInput.classList.add(`none`)
+
+        findListp.textContent = `Имя:${findUser.name}\nФамилия:${findUser.surname}\nДень рождения:${findUser.birthday}\nВозраст:${findUser.age}\nГруппа:${findUser.group}\nУчитель:${findUser.teacher}`
+
+        findListp.classList.add(`active`)
 
     }
 
