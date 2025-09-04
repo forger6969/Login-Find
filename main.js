@@ -1,6 +1,9 @@
 let usersOb = {
     forger: { password: "admin", name: "Saidazim", surname: "Buriboyev", age: 15, birthday: "26 / 11 / 2010", group: "F2 - 2879", teacher: "Ertan_Emirhan" },
-    aziz: { password: "admin", name: "Aziz", surname: "Amangeldiev", age: 15, birthday: "26 / 3 / 2010", group: "F2 - 2879", teacher: "Ertan_Emirhan" }
+    aziz: { password: "admin", name: "Aziz", surname: "Amangeldiev", age: 15, birthday: "26 / 3 / 2010", group: "F2 - 2879", teacher: "Ertan_Emirhan" },
+    ahmad: { password: "admin", name: "Ahmad", surname: "Qahramonov", age: 15, birthday: "13 / 5 / 2010", group: "F2 - 2879", teacher: "Ertan_Emirhan" },
+    voris: { password: "admin", name: "Vorisjon", surname: "Boboyev", age: 15, birthday: "16 / 8 / 2008", group: "F2 - 2879", teacher: "Ertan_Emirhan" },
+    sardor: { password: "admin", name: "Sardor", surname: "Atxamov", age: 15, birthday: "20 / 1 / 2011", group: "F2 - 2879", teacher: "Ertan_Emirhan" },
 }
 
 const loginInput = document.getElementById(`login`)
